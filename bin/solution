@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "fizz_buzz"
+
+FizzBuzz.list(1..100).each do |output|
+  puts output
+end
