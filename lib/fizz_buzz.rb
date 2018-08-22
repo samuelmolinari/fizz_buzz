@@ -20,7 +20,7 @@ module FizzBuzz
       output += FIZZ_OUTPUT if fizz?(n)
       output += BUZZ_OUTPUT if buzz?(n)
 
-      output
+      output.empty? ? n.to_s : output
     end
   end
 end

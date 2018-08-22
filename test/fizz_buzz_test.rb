@@ -54,4 +54,12 @@ class FizzBuzzTest < Minitest::Test
       end
     end
   end
+
+  def test_lack_of_conversion
+    FizzBuzz.stub :buzz?, false do
+      FizzBuzz.stub :fizz?, false do
+        assert_equal '1', FizzBuzz.convert(1)
+      end
+    end
+  end
 end
