@@ -62,4 +62,24 @@ class FizzBuzzTest < Minitest::Test
       end
     end
   end
+
+  def test_range_conversion
+    assert_equal %w[
+      1
+      2
+      Fizz
+      4
+      Buzz
+      Fizz
+      7
+      8
+      Fizz
+      Buzz
+      11
+      Fizz
+      13
+      14
+      FizzBuzz
+    ], FizzBuzz.list(1..15)
+  end
 end

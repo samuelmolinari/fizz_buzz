@@ -22,5 +22,11 @@ module FizzBuzz
 
       output.empty? ? n.to_s : output
     end
+
+    def list(range)
+      range.map do |n|
+        convert(n)
+      end
+    end
   end
 end
