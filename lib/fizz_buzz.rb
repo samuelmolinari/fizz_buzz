@@ -18,6 +18,9 @@ module FizzBuzz
     def convert(n)
       output = ''
       output += FIZZ_OUTPUT if fizz?(n)
+      output += BUZZ_OUTPUT if buzz?(n)
+
+      output
     end
   end
 end
