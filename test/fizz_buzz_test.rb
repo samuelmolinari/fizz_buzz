@@ -26,4 +26,14 @@ class FizzBuzzTest < Minitest::Test
     refute FizzBuzz.buzz?(3)
     refute FizzBuzz.buzz?(151)
   end
+
+  def test_conversion_of_number_to_fizz
+    FizzBuzz.stub :fizz?, true do
+      assert_equal 'Fizz', FizzBuzz.convert(3)
+    end
+
+    FizzBuzz.stub :fizz?, false do
+      refute_equal 'Fizz', FizzBuzz.convert(3)
+    end
+  end
 end
