@@ -8,11 +8,11 @@ module FizzBuzz
     BUZZ_OUTPUT = 'Buzz'
 
     def fizz?(n)
-      n % FIZZ_MULTIPLIER == 0
+      n % FIZZ_MULTIPLIER == 0 || n.to_s.include?(FIZZ_MULTIPLIER.to_s)
     end
 
     def buzz?(n)
-      n % BUZZ_MULTIPLIER == 0
+      n % BUZZ_MULTIPLIER == 0 || n.to_s.include?(BUZZ_MULTIPLIER.to_s)
     end
 
     def convert(n)
