@@ -3,13 +3,13 @@
 ## Setup
 
 ```ruby
-bundle setup
+bundle install
 ```
 
 ## Tests
 
 ```ruby
-bundle exec test
+rake test
 ```
 
 ## Output solution
